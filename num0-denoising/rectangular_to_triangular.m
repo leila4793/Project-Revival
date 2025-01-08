@@ -22,7 +22,7 @@ function [Ip] = rectangular_to_triangular(I,p)
   %---Sample the image at the node points----%
   [Xidx,Yidx] = meshgrid(1:1:WIDTH,1:1:LENGTH); 
   
-  Ip = interp2(Xidx,Yidx,I,p(:,1),p(:,2));
+  Ip = interp2(Xidx, Yidx, I, p(:,1), p(:,2), 'cubic');
   temp_idx = find(isnan(Ip) == 1);
   Ip(temp_idx) = 0;
     

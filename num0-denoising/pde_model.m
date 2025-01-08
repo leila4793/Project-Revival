@@ -43,7 +43,7 @@ pdesetbd(1,...
 '0')
 
 % Mesh generation:
-setappdata(pde_fig,'Hgrad',1.3);
+setappdata(pde_fig,'Hgrad',1.5);
 setappdata(pde_fig,'refinemethod','regular');
 setappdata(pde_fig,'jiggle',char('on','mean',''));
 setappdata(pde_fig,'MesherVersion','preR2013a');
@@ -77,3 +77,4 @@ setappdata(pde_fig,'colstring','');
 setappdata(pde_fig,'arrowstring','');
 setappdata(pde_fig,'deformstring','');
 setappdata(pde_fig,'heightstring','');
+
